@@ -1,0 +1,42 @@
+// Track your dynamic progress (e.g. from Room or calculations)
+var currentGoalProgress = 65 
+
+val bannerAdapter = UniversalAdapter<Int, ItemBentoCardBinding>(
+    inflate = ItemBentoCardBinding::inflate,
+    bind = { b, cardType ->
+        // 1. Toggle visibility so only the active layout displays
+        b.layoutCardOne.isVisible = (cardType == 0)
+        b.layoutCardTwo.isVisible = (cardType == 1)
+        b.layoutCardThree.isVisible = (cardType == 2)
+
+        // 2. Change text, progress, and button dynamically per card
+        when (cardType) {
+            0 -> {
+                // Card 0: Custom Goal Text
+                b.txvCardOneTitle.text = "Today's Green Goal"
+                b.txvCardOneDesc.text = "Log at least 2 recyclable items before 5 PM."
+            }
+            1 -> {
+                // Card 1: Custom Progress Bar & Percentage Text
+                b.txvCardTwoTitle.text = "Weekly Recycling Goal"
+                b.progressBarTarget.progress = currentGoalProgress
+                b.txvProgressPercent.text = "$currentGoalProgress% completed"
+            }
+            2 -> {
+                // Card 2: Custom Title, Description, Button Text, and Click Action
+                b.txvCardThreeTitle.text = "Drop-off Locations"
+                b.txvCardThreeDesc.text = "Find recycling bins near San Pablo."
+                b.btnCardAction.text = "Open Map"
+                
+                b.btnCardAction.setOnClickListener {
+                    startActivity(Intent(this, LocationEntriesActivity::class.java))
+                }
+            }
+        }
+    }
+)
+
+binding.pagerBento.adapter = bannerAdapter
+
+// Submit cards 0, 1, and 2
+bannerAdapter.submitList(listOf(0, 1, 2))

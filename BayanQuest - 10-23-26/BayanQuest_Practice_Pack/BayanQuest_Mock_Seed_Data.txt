@@ -1,0 +1,222 @@
+================================================================================
+BAYANQUEST — OFFICIAL MOCK DATA SHEET (TOWN OF SAN ISIDRO)
+================================================================================
+
+--------------------------------------------------------------------------------
+PART A: CATEGORIES & STATUS OPTIONS
+--------------------------------------------------------------------------------
+
+MISSION CATEGORIES:
+- Go-Bag Supply
+- Household Prep
+- Evacuation
+- Safety Guide
+
+MISSION STATUS:
+- Pending
+- Completed
+
+COMMUNITY RESOURCE CATEGORIES:
+- Evacuation Center
+- Health Facility
+- Emergency Hotline
+- Relief Hub
+
+
+--------------------------------------------------------------------------------
+PART B: PREDEFINED MISSIONS & CHECKLIST POINTERS (8 MISSIONS)
+--------------------------------------------------------------------------------
+
+MISSION #1
+TITLE: Drinking Water & Non-Perishable Food
+CATEGORY: Go-Bag Supply
+XP REWARD: 50
+STATUS: Pending
+DATE: 10/21/2026
+DESCRIPTION: Pack at least 3 liters of clean drinking water per person and a 3-day supply of canned or ready-to-eat food.
+POINTERS:
+- Pack 3 Liters of Clean Drinking Water per Person
+- Pack 3-Day Supply of Easy-Open Canned Goods
+- Pack High-Energy Biscuits and Utensils
+
+MISSION #2
+TITLE: Flashlight, Whistle & Extra Batteries
+CATEGORY: Go-Bag Supply
+XP REWARD: 50
+STATUS: Pending
+DATE: 10/21/2026
+DESCRIPTION: Pack a waterproof LED flashlight, an emergency signaling whistle, and spare AA/AAA batteries in a sealed pouch.
+POINTERS:
+- Pack Waterproof LED Flashlight
+- Pack Emergency Signaling Whistle
+- Pack Spare AA/AAA Batteries and Powerbank
+
+MISSION #3
+TITLE: First-Aid Kit & Essential Medicines
+CATEGORY: Go-Bag Supply
+XP REWARD: 75
+STATUS: Pending
+DATE: 10/21/2026
+DESCRIPTION: Include sterile bandages, antiseptic wipes, pain relievers, personal maintenance medicines, and basic hygiene supplies.
+POINTERS:
+- Pack Sterile Bandages, Gauze, and Antiseptic
+- Pack Pain Relievers and Personal Maintenance Medicines
+- Pack Basic Hygiene Kit (Soap, Alcohol, Face Masks)
+
+MISSION #4
+TITLE: Waterproof Important Documents & Cash
+CATEGORY: Go-Bag Supply
+XP REWARD: 75
+STATUS: Pending
+DATE: 10/21/2026
+DESCRIPTION: Seal government IDs, medical records, property documents, and small-denomination emergency cash inside a waterproof zip-lock bag.
+POINTERS:
+- Place Valid Government IDs in Waterproof Zip-Lock Bag
+- Pack Copies of Medical Records and Property Documents
+- Pack Small-Denomination Emergency Cash
+
+MISSION #5
+TITLE: Identify Nearest San Isidro Evacuation Center
+CATEGORY: Evacuation
+XP REWARD: 100
+STATUS: Pending
+DATE: 10/21/2026
+DESCRIPTION: Check the Community Resource Directory and confirm the safest walking route from your home to your designated barangay evacuation shelter.
+POINTERS:
+- Locate Nearest Barangay Evacuation Center in Directory
+- Check Primary and Backup Walking Routes
+- Agree on Family Emergency Meeting Point
+
+MISSION #6
+TITLE: Secure Roof, Windows & Main Utility Breakers
+CATEGORY: Household Prep
+XP REWARD: 100
+STATUS: Pending
+DATE: 10/21/2026
+DESCRIPTION: Reinforce loose windows, clear roof gutters of debris, and ensure all family members know how to shut off the main electrical breaker and LPG tank.
+POINTERS:
+- Reinforce Loose Windows and Doors
+- Clear Roof Gutters and Drains of Debris
+- Ensure All Family Members Know How to Shut Off Electrical Breaker and LPG Tank
+
+MISSION #7
+TITLE: Save San Isidro Emergency Hotlines
+CATEGORY: Safety Guide
+XP REWARD: 50
+STATUS: Pending
+DATE: 10/21/2026
+DESCRIPTION: Review the MDRRMO, Hospital, and Rescue hotlines in the directory and write a backup copy on a physical card inside your Go-Bag.
+POINTERS:
+- Save San Isidro MDRRMO Rescue Number on All Phones
+- Save San Isidro District Hospital Emergency Hotline
+- Write Physical Backup Contact Card Inside Go-Bag
+
+MISSION #8
+TITLE: Review Typhoon Surge & Flood Safety Guidelines
+CATEGORY: Safety Guide
+XP REWARD: 100
+STATUS: Pending
+DATE: 10/21/2026
+DESCRIPTION: Never wade through floodwaters, stay away from downed power lines, and evacuate immediately once the Barangay Pre-Emptive Alert is raised.
+POINTERS:
+- Move Appliances and Valuables to Higher Ground
+- Review Rule: Never Wade Through Floodwaters or Touch Downed Wires
+- Prepare to Evacuate Immediately on Pre-Emptive Alert
+
+
+--------------------------------------------------------------------------------
+PART C: SAN ISIDRO COMMUNITY RESOURCE DIRECTORY (6 RESOURCES)
+--------------------------------------------------------------------------------
+
+RESOURCE #1
+NAME: San Isidro Central School Gym
+CATEGORY: Evacuation Center
+CONTACT: 0917-555-0101
+ADDRESS: Rizal Ave, Brgy. Poblacion, San Isidro
+STATUS: Open 24/7 — 180 Slots Available
+REMARKS: Primary municipal typhoon shelter equipped with backup generator, potable water station, and modular family tents.
+
+RESOURCE #2
+NAME: Brgy. Maligaya Covered Court
+CATEGORY: Evacuation Center
+CONTACT: 0918-555-0244
+ADDRESS: Mabini St, Brgy. Maligaya, San Isidro
+STATUS: Open 24/7 — 120 Slots Available
+REMARKS: High-ground evacuation center featuring a community kitchen, charging station, and designated pet-friendly shelter area.
+
+RESOURCE #3
+NAME: San Isidro District Hospital
+CATEGORY: Health Facility
+CONTACT: 0917-555-0911
+ADDRESS: National Highway, Brgy. San Roque, San Isidro
+STATUS: 24/7 Emergency & Trauma Operations
+REMARKS: Full emergency room, ambulance dispatch, maternity care, and urgent trauma / first-aid treatment.
+
+RESOURCE #4
+NAME: Brgy. Sta. Cruz Rural Health Unit
+CATEGORY: Health Facility
+CONTACT: 0920-555-0388
+ADDRESS: Burgos St, Brgy. Sta. Cruz, San Isidro
+STATUS: 07:00 - 22:00 Daily
+REMARKS: Provides free first-aid dressing, tetanus shots, maintenance medicine refills, and pediatric consultations.
+
+RESOURCE #5
+NAME: San Isidro MDRRMO Rescue Command
+CATEGORY: Emergency Hotline
+CONTACT: 911 / 0917-888-7233
+ADDRESS: Municipal Hall Compound, Brgy. Poblacion, San Isidro
+STATUS: Active 24/7 Rescue Dispatch
+REMARKS: Emergency hotline for rubber boat flood extraction, fallen tree clearing, and urgent medical transport.
+
+RESOURCE #6
+NAME: DSWD San Isidro Relief & Water Hub
+CATEGORY: Relief Hub
+CONTACT: 0919-555-0770
+ADDRESS: Public Market Annex, Brgy. Poblacion, San Isidro
+STATUS: 08:00 - 18:00 Daily
+REMARKS: Distributes emergency family food packs, hygiene kits, sleeping mats, and purified drinking water refills.
+
+
+--------------------------------------------------------------------------------
+PART D: LEVEL RANKS & ACHIEVEMENT BADGES
+--------------------------------------------------------------------------------
+
+RANK #1
+LEVEL: Level 1 (0 - 199 XP)
+TITLE: Citizen Scout
+ASSET: rank_1_scout.png
+
+RANK #2
+LEVEL: Level 2 (200 - 399 XP)
+TITLE: Barangay Responder
+ASSET: rank_2_responder.png
+
+RANK #3
+LEVEL: Level 3 (400 - 599 XP)
+TITLE: Storm Vanguard
+ASSET: rank_3_vanguard.png
+
+RANK #4
+LEVEL: Level 4+ (600+ XP)
+TITLE: Bayan Hero
+ASSET: rank_4_hero.png
+
+ACHIEVEMENT #1
+TITLE: First Responder
+CONDITION: Complete your first preparedness mission (1 or more completed missions).
+ASSET: badge_first_responder.png
+
+ACHIEVEMENT #2
+TITLE: Go-Bag Ready
+CONDITION: Complete at least 3 missions under the "Go-Bag Supply" category.
+ASSET: badge_gobag_ready.png
+
+ACHIEVEMENT #3
+TITLE: Prepared Citizen
+CONDITION: Complete at least 4 missions in total OR reach 50% Overall Readiness.
+ASSET: badge_prepared_citizen.png
+
+ACHIEVEMENT #4
+TITLE: Quest Master
+CONDITION: Complete 100% of all available missions (minimum of 5 missions).
+ASSET: badge_quest_master.png

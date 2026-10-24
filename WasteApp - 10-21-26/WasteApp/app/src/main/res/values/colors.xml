@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="primary_tint">#C6DCC6</color>
+    <color name="primary20A">#33599949</color>
+    <color name="primary">#599949</color>
+    <color name="primary_dark">#1A4137</color>
+
+    <color name="neutral_tint2">#EAEDE9</color>
+    <color name="neutral_tint1">#CDD5CD</color>
+    <color name="neutral">#8B9D8D</color>
+    <color name="neutral_dark">#292929</color>
+</resources>

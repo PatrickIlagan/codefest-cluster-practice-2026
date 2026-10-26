@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary20"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/body_bg"
+                    android:divider="@drawable/divider_16"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:showDividers="middle">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/txvUsername"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_black"
+                                android:includeFontPadding="false"
+                                android:letterSpacing="-0.02"
+                                android:text="Username"
+                                android:textAlignment="center"
+                                android:textColor="@color/primary20"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/txvEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_medium"
+                                android:includeFontPadding="false"
+                                android:text="Email"
+                                android:textAlignment="center"
+                                android:textColor="@color/black20A"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:divider="@drawable/divider_black"
+                            android:orientation="vertical"
+                            android:padding="8dp"
+                            android:showDividers="middle">
+
+                            <LinearLayout
+                                android:id="@+id/lilTransactionHistory"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:divider="@drawable/divider_8"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp"
+                                android:showDividers="middle">
+
+                                <ImageView
+
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:tint="@color/primary20"
+                                    app:srcCompat="@drawable/baseline_format_list_bulleted_24" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:letterSpacing="-0.02"
+                                    android:text="Transaction History"
+                                    android:textColor="@color/primary50"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lilProducts"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:divider="@drawable/divider_8"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp"
+                                android:showDividers="middle">
+
+                                <ImageView
+
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:tint="@color/primary20"
+                                    app:srcCompat="@drawable/baseline_shopping_bag_24" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:letterSpacing="-0.02"
+                                    android:text="Products"
+                                    android:textColor="@color/primary50"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lilLogOut"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:divider="@drawable/divider_8"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp"
+                                android:showDividers="middle">
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:tint="@color/primary20"
+                                    app:srcCompat="@drawable/baseline_logout_24" />
+
+                                <TextView
+                                    android:id="@+id/textView21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:letterSpacing="-0.02"
+                                    android:text="Log Out"
+                                    android:textColor="@color/primary50"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:translationY="70dp"
+            app:cardCornerRadius="200dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:paddingBottom="16dp"
+            app:itemActiveIndicatorStyle="@style/CustomIndicator"
+            app:itemIconTint="@color/primary20"
+            app:itemTextColor="@color/primary20"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu" />
+    </FrameLayout>
+</LinearLayout>

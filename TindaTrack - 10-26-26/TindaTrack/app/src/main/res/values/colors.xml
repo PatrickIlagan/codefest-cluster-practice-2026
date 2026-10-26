@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black20A">#33000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="primary80">#C8F2DA</color>
+    <color name="primary50">#27BC8A</color>
+    <color name="primary20">#0E433E</color>
+
+    <color name="neutral90">#F2F2F2</color>
+    <color name="neutral70">#BABDC2</color>
+    <color name="neutral30">#3F4848</color>
+    <color name="neutral10">#17191B</color>
+</resources>

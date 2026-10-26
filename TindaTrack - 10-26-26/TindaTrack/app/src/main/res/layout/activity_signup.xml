@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary20"
+    android:divider="@drawable/divider_16"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:showDividers="middle"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/txvLabel3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/inter_black"
+        android:text="Sorry-Sorry Store"
+        android:textAlignment="center"
+        android:textColor="@color/primary50"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txvLabel4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_black"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/neutral90"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtUsername_Signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usename"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/neutral90"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtUserEmail_Signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/neutral90"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword_Signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="text|textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary50"
+        android:fontFamily="@font/inter_bold"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="8dp" />
+
+    <TextView
+        android:id="@+id/txvHasAccount_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/inter_bold"
+        android:text="I have an account."
+        android:textAlignment="center"
+        android:textColor="@color/primary50"
+        android:textStyle="italic" />
+
+</LinearLayout>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neutral90"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/primary20"
+                    android:gravity="bottom|center"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="24dp"
+                    android:paddingEnd="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/inter_medium"
+                                android:includeFontPadding="false"
+                                android:letterSpacing="-0.07"
+                                android:text="Total Cash"
+                                android:textColor="@color/primary50"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/txvTotalCash"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/inter_black"
+                                android:includeFontPadding="false"
+                                android:letterSpacing="-0.02"
+                                android:text="00.00"
+                                android:textColor="@color/white"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/inter_medium"
+                                android:includeFontPadding="false"
+                                android:letterSpacing="-0.07"
+                                android:text="Total Utang"
+                                android:textColor="@color/primary50"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/txvUtang"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/inter_black"
+                                android:includeFontPadding="false"
+                                android:letterSpacing="-0.02"
+                                android:text="0.00"
+                                android:textColor="@color/white"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnProfile"
+                            style="@style/Widget.Material3.Button.IconButton"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            app:icon="@drawable/baseline_account_circle_24"
+                            app:iconGravity="textStart"
+                            app:iconPadding="0dp"
+                            app:iconSize="40dp"
+                            app:iconTint="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/body"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@drawable/divider_8"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="112dp"
+                    android:showDividers="middle">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/pagerBento"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:boxBackgroundColor="@color/white"
+                            app:boxCornerRadiusBottomEnd="8dp"
+                            app:boxCornerRadiusBottomStart="8dp"
+                            app:boxCornerRadiusTopEnd="8dp"
+                            app:boxCornerRadiusTopStart="8dp"
+                            app:boxStrokeColor="@color/neutral70"
+                            app:boxStrokeWidth="0dp"
+                            app:endIconDrawable="@drawable/baseline_search_24"
+                            app:endIconMode="custom"
+                            app:hintTextColor="@color/neutral30">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtProductSearch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Search Product"
+                                android:textColor="@color/neutral10"
+                                android:textColorHint="@color/neutral30"
+                                android:textSize="14sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btnSearch"
+                            style="@style/Widget.Material3.Button.IconButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            app:icon="@drawable/baseline_chevron_right_24"
+                            app:iconGravity="textStart"
+                            app:iconPadding="0dp"
+                            app:iconSize="32dp"
+                            app:iconTint="@color/primary50" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@drawable/divider_8"
+                        android:orientation="horizontal"
+                        android:showDividers="middle">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cdvProduct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/primary50"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp"
+                            app:strokeColor="@color/neutral70"
+                            app:strokeWidth="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:letterSpacing="-0.03"
+                                    android:padding="8dp"
+                                    android:text="Products"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:cropToPadding="false"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/img_products" />
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cdvTransaction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/neutral70"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp"
+                            app:strokeColor="@color/neutral70"
+                            app:strokeWidth="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:letterSpacing="-0.03"
+                                    android:padding="8dp"
+                                    android:text="Transactions"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/neutral30"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/img_transactions" />
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/inter_black"
+                                android:letterSpacing="-0.02"
+                                android:text="Latest Products"
+                                android:textColor="@color/primary20"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/btnProducts"
+                                style="@style/Widget.Material3.Button.IconButton"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                app:icon="@drawable/baseline_chevron_right_24"
+                                app:iconGravity="textStart"
+                                app:iconPadding="0dp"
+                                app:iconSize="32dp"
+                                app:iconTint="@color/primary50" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardBackgroundColor="@color/neutral70"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:text="Nothing to see here..."
+                                    android:textStyle="italic" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rcvLatestProducts"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/inter_black"
+                                android:letterSpacing="-0.02"
+                                android:text="Latest Transactions"
+                                android:textColor="@color/primary20"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/btnTransactions"
+                                style="@style/Widget.Material3.Button.IconButton"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                app:icon="@drawable/baseline_chevron_right_24"
+                                app:iconGravity="textStart"
+                                app:iconPadding="0dp"
+                                app:iconSize="32dp"
+                                app:iconTint="@color/primary50" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardBackgroundColor="@color/neutral70"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:text="Nothing to see here..."
+                                    android:textStyle="italic" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rcvLatestTransactions"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:paddingBottom="16dp"
+            app:itemActiveIndicatorStyle="@style/CustomIndicator"
+            app:itemIconTint="@color/primary20"
+            app:itemTextColor="@color/primary20"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu" />
+    </FrameLayout>
+</LinearLayout>

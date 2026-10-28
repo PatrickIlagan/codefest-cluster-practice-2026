@@ -191,7 +191,11 @@ class MainActivity : AppCompatActivity() {
                             finish()
                         }
 
-
+                    3 ->
+                        b.card3.setOnClickListener {
+                            startActivity(Intent(this, MenuActivity::class.java).putExtra("SELECTED", "Snacks"))
+                            finish()
+                        }
 
                     2 ->
                         b.card4.setOnClickListener {
@@ -201,12 +205,6 @@ class MainActivity : AppCompatActivity() {
                                     "Drinks & Desserts"
                                 )
                             )
-                            finish()
-                        }
-
-                    3 ->
-                        b.card3.setOnClickListener {
-                            startActivity(Intent(this, MenuActivity::class.java).putExtra("SELECTED", "Snacks"))
                             finish()
                         }
                 }

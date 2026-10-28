@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transaprent">#00000000</color>
+
+    <color name="neutral90">#FAFAF9</color>
+    <color name="neutral80">#D2D5D5</color>
+    <color name="neutral50">#959CA5</color>
+    <color name="neutral20">#393A3D</color>
+
+    <color name="primary80">#D4E6F4</color>
+    <color name="primary50">#4E94EC</color>
+    <color name="primary20">#2F3365</color>
+</resources>

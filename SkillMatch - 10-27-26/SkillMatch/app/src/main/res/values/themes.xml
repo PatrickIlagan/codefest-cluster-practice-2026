@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Backend10272026" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Backend10272026." parent="Base.Theme.Backend10272026" />
+    
+    <style name="CustomActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/primary80</item>
+    </style>
+
+    <style name="BottomNavTextAppearanceInactive" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.LabelMedium</item>
+    </style>
+
+    <style name="BottomNavTextAppearanceActive" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.LabelMedium</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.Material3.Button">
+        <item name="cornerRadius">8dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Material3.BodyMedium</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="CustomTextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/neutral80</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+
+    <style name="CustomEDM" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/neutral80</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+
+    <style name="CustomChip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipBackgroundColor">@color/primary20</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

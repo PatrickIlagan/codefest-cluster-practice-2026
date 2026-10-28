@@ -1,0 +1,209 @@
+================================================================================
+KAINTAYO — OFFICIAL MOCK DATA SHEET (KUSINA NI ALING ROSA, SAN ISIDRO)
+================================================================================
+
+--------------------------------------------------------------------------------
+PART A: CATEGORIES & OPTIONS
+--------------------------------------------------------------------------------
+
+FOOD CATEGORIES:
+- Rice Meals
+- Noodles & Pasta
+- Snacks
+- Drinks & Desserts
+
+ORDER TYPES:
+- Dine-in
+- Take-out
+
+USER ROLES:
+- Admin     (store staff: can add, edit, and delete food items)
+- Customer  (default for every Sign Up: browse, order, view orders)
+
+PRE-LOADED ADMIN ACCOUNT (must exist on first launch):
+NAME: Aling Rosa
+EMAIL: admin@kaintayo.ph
+PASSWORD: admin123
+ROLE: Admin
+
+SAMPLE CUSTOMER (create through Sign Up during testing):
+NAME: Juan Dela Cruz
+EMAIL: juan@kaintayo.ph
+PASSWORD: juan123
+ROLE: Customer
+
+
+--------------------------------------------------------------------------------
+PART B: PRE-LOADED MENU (12 FOOD ITEMS)
+--------------------------------------------------------------------------------
+Image names refer to files in KainTayo_Assets/ (copy them into res/drawable).
+
+FOOD #1
+NAME: Chicken Adobo Rice
+CATEGORY: Rice Meals
+PRICE: 95.00
+DESCRIPTION: Tender chicken simmered in soy sauce, vinegar, garlic, and bay leaves, served with steamed rice.
+IMAGE: food_chicken_adobo
+
+FOOD #2
+NAME: Pork Sisig Rice
+CATEGORY: Rice Meals
+PRICE: 110.00
+DESCRIPTION: Sizzling chopped pork with onions, chili, and calamansi, topped with a fresh egg and served with rice.
+IMAGE: food_pork_sisig
+
+FOOD #3
+NAME: Beef Tapsilog
+CATEGORY: Rice Meals
+PRICE: 120.00
+DESCRIPTION: Sweet-savory beef tapa with garlic fried rice and a sunny-side-up egg. The classic all-day breakfast.
+IMAGE: food_beef_tapsilog
+
+FOOD #4
+NAME: Pancit Canton
+CATEGORY: Noodles & Pasta
+PRICE: 85.00
+DESCRIPTION: Stir-fried egg noodles with pork, shrimp, cabbage, carrots, and a squeeze of calamansi.
+IMAGE: food_pancit_canton
+
+FOOD #5
+NAME: Filipino Spaghetti
+CATEGORY: Noodles & Pasta
+PRICE: 75.00
+DESCRIPTION: Sweet-style spaghetti with banana ketchup sauce, sliced hotdogs, ground pork, and grated cheese.
+IMAGE: food_filipino_spaghetti
+
+FOOD #6
+NAME: Beef Mami
+CATEGORY: Noodles & Pasta
+PRICE: 90.00
+DESCRIPTION: Hot noodle soup in rich beef broth with tender beef slices, boiled egg, and spring onions.
+IMAGE: food_beef_mami
+
+FOOD #7
+NAME: Lumpiang Shanghai (6 pcs)
+CATEGORY: Snacks
+PRICE: 65.00
+DESCRIPTION: Crispy fried spring rolls filled with seasoned ground pork and vegetables, with sweet chili dip.
+IMAGE: food_lumpiang_shanghai
+
+FOOD #8
+NAME: Cheeseburger
+CATEGORY: Snacks
+PRICE: 79.00
+DESCRIPTION: Juicy beef patty with melted cheese, lettuce, tomato, and special sauce in a toasted bun.
+IMAGE: food_cheeseburger
+
+FOOD #9
+NAME: French Fries
+CATEGORY: Snacks
+PRICE: 55.00
+DESCRIPTION: Golden crispy potato fries, lightly salted. Perfect for sharing or merienda.
+IMAGE: food_french_fries
+
+FOOD #10
+NAME: Halo-Halo
+CATEGORY: Drinks & Desserts
+PRICE: 89.00
+DESCRIPTION: Shaved ice with sweet beans, nata de coco, leche flan, ube halaya, and evaporated milk.
+IMAGE: food_halo_halo
+
+FOOD #11
+NAME: Iced Milk Tea
+CATEGORY: Drinks & Desserts
+PRICE: 69.00
+DESCRIPTION: Creamy black milk tea over ice with chewy tapioca pearls.
+IMAGE: food_iced_milk_tea
+
+FOOD #12
+NAME: Leche Flan
+CATEGORY: Drinks & Desserts
+PRICE: 45.00
+DESCRIPTION: Silky-smooth steamed custard with golden caramel syrup.
+IMAGE: food_leche_flan
+
+
+--------------------------------------------------------------------------------
+PART C: PROVIDED ASSET PACK (KainTayo_Assets/)
+--------------------------------------------------------------------------------
+
+FOOD IMAGES (512 x 512):
+- food_chicken_adobo.png        - food_pancit_canton.png
+- food_pork_sisig.png           - food_filipino_spaghetti.png
+- food_beef_tapsilog.png        - food_beef_mami.png
+- food_lumpiang_shanghai.png    - food_halo_halo.png
+- food_cheeseburger.png         - food_iced_milk_tea.png
+- food_french_fries.png         - food_leche_flan.png
+
+DEFAULT IMAGE (for newly added foods without a matching image):
+- food_placeholder.png
+
+CATEGORY BANNERS (1080 x 480):
+- banner_rice.png       (Rice Meals)
+- banner_noodle.png     (Noodles & Pasta)
+- banner_snack.png      (Snacks)
+- banner_drink.png      (Drinks & Desserts)
+
+APP LOGO (512 x 512):
+- logo_kaintayo.png
+
+
+--------------------------------------------------------------------------------
+PART D: JUDGE TEST SCENARIOS (RUN THESE BEFORE SUBMITTING)
+--------------------------------------------------------------------------------
+Start from a fresh install. Expected results are listed after each arrow.
+
+SCENARIO 1 — First Launch & Accounts
+- Open the app                                   -> Log In screen
+- Sign Up as Juan Dela Cruz (sample customer)    -> Account created with role Customer
+- Log in as Juan                                 -> Menu shows exactly 12 foods
+- Close and reopen the app                       -> Still logged in as Juan
+                                                 -> Still 12 foods (no duplicates)
+
+SCENARIO 2 — Cart Math
+- Add Chicken Adobo Rice x2                      -> Cart total: PHP 190.00
+- Add Iced Milk Tea x1                           -> Cart total: PHP 259.00
+- Close and reopen the app                       -> Cart still has both items
+
+SCENARIO 3 — Checkout (Order #1)
+- Checkout: Customer "Juan Dela Cruz", Dine-in   -> Order saved, total PHP 259.00
+                                                 -> Cart is now empty
+
+SCENARIO 4 — Same Food Added Twice
+- Add Halo-Halo x1, then add Halo-Halo x1 again  -> ONE cart line, quantity 2, PHP 178.00
+- Add Lumpiang Shanghai (6 pcs) x1               -> Cart total: PHP 243.00
+- Decrease Lumpiang Shanghai to 0 / Remove it    -> Cart total: PHP 178.00
+- Add Lumpiang Shanghai (6 pcs) x1 again         -> Cart total: PHP 243.00
+
+SCENARIO 5 — Checkout (Order #2)
+- Checkout: Customer "Juan Dela Cruz", Take-out,
+  Notes "extra ice"                              -> Order saved, total PHP 243.00
+
+SCENARIO 6 — Dashboard
+- Open the dashboard                             -> Total Orders: 2
+                                                 -> Total Spent: PHP 502.00
+                                                 -> Most Ordered Category: Drinks & Desserts
+                                                    (3 items: Iced Milk Tea x1 + Halo-Halo x2)
+                                                 -> Recent orders: #2 first, then #1
+
+SCENARIO 7 — Roles
+- As Juan (Customer), open the menu              -> NO Add Food button, NO Edit / Delete controls
+- Log out                                        -> Back to the Log In screen
+- Log in as Aling Rosa (admin@kaintayo.ph)       -> Add Food button and Edit / Delete controls visible
+- Profile                                        -> Shows "Aling Rosa" and role "Admin"
+
+SCENARIO 8 — Past Orders Must Not Change (as Admin)
+- Edit Halo-Halo price from 89.00 to 99.00       -> Order #2 still totals PHP 243.00
+- Delete Iced Milk Tea from the menu             -> Order #1 still shows Iced Milk Tea x1, PHP 69.00
+                                                 -> Total Spent still PHP 502.00
+
+SCENARIO 9 — Validation
+- Checkout with an empty cart                    -> Blocked with a clear message
+- Checkout without a customer name               -> Blocked with a clear message
+- As Admin, add a food with a blank name         -> Rejected with a clear message
+- Add a food with price "0", "-5", or "abc"      -> Rejected with a clear message
+- None of the above crash the app
+
+SCENARIO 10 — Back Button
+- From every screen, press the system Back button -> App navigates sensibly and never
+                                                    shows an empty or broken screen

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black40">#66000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="primary80">#D7BCF6</color>
+    <color name="primary50">#5E2CDC</color>
+    <color name="primary20">#17174C</color>
+    <color name="primary2040">#66111131</color>
+
+    <color name="neutral90">#F3F0F3</color>
+    <color name="neutral80">#D9D6DC</color>
+    <color name="neutral70">#BDBAC3</color>
+    <color name="neutral50">#807B8D</color>
+    <color name="neutral20">#2F2F34</color>
+
+</resources>

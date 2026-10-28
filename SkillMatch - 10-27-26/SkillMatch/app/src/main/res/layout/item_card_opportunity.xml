@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvBookmarkStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:letterSpacing="-0.01"
+                android:text="Saved"
+                android:textAppearance="@style/TextAppearance.Material3.LabelMedium" />
+
+            <TextView
+                android:id="@+id/txvOpportunityTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:letterSpacing="-0.01"
+                android:text="Title"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_black40"
+                android:dividerPadding="3dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <TextView
+                    android:id="@+id/txvOpportunityOrg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:letterSpacing="-0.01"
+                    android:paddingRight="8dp"
+                    android:text="Organization"
+                    android:textAppearance="@style/TextAppearance.Material3.LabelMedium" />
+
+                <TextView
+                    android:id="@+id/txvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:letterSpacing="-0.01"
+                    android:paddingLeft="8dp"
+                    android:text="Category"
+                    android:textAppearance="@style/TextAppearance.Material3.LabelMedium" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txvMatchPercentage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:letterSpacing="-0.01"
+                android:paddingBottom="8dp"
+                android:text="0% Match"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
+
+            <LinearLayout
+                android:id="@+id/req"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Required"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvRequiredSkills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBookmarkOpportunity"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/outline_bookmark_border_24"
+            app:iconGravity="textStart"
+            app:iconSize="40dp"
+            app:iconTint="@color/primary20" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

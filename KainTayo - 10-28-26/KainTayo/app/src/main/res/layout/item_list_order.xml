@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/divider_8"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/txvFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Food Name"
+        android:textAppearance="@style/Body"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txvFoodQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x1"
+        android:textAppearance="@style/Body"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txvFoodAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="PHP 00.00"
+        android:textAppearance="@style/Body"
+        android:textStyle="bold" />
+</LinearLayout>

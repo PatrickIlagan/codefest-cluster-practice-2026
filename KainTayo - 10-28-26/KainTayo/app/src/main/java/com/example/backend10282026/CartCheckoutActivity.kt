@@ -46,7 +46,7 @@ class CartCheckoutActivity : AppCompatActivity() {
         if (user != null){
             binding.btnCheckout.setOnClickListener {
                 val orderType = findViewById<RadioButton>(binding.rdgOrderType.checkedRadioButtonId)?.text?.toString() ?: "Null"
-                val notes = binding.edtCustomerNotes.toString().trim()
+                val notes = binding.edtCustomerNotes.text.toString().trim()
                 val cartItem = dao.getAllCardItemListByUserId(userId)
 
                 if(notes.isBlank()){
@@ -72,7 +72,7 @@ class CartCheckoutActivity : AppCompatActivity() {
                 val orderId = dao.insertOrder(newOrder)
 
                 cartItem.forEach { carty ->
-                    val food = dao.getFoodById(carty.id)
+                    val food = dao.getFoodById(carty.foodId)
                     if(food != null){
                         val orderItem = OrderItem(
                             orderId = orderId,

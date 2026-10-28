@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "orderItems_table",
     foreignKeys = [
         ForeignKey(
-            entity = User::class,
+            entity = Order::class,
             parentColumns = ["id"],
             childColumns = ["orderId"],
             onDelete = ForeignKey.CASCADE,
